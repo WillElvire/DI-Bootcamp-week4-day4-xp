@@ -21,7 +21,7 @@ export class ColorFormComponent {
 
 submit() {
   console.log(this.form.value);
-  this.favoriteColor = this.form.value.favoriteColor;
+  this.favoriteColor = this.form.get('favoriteColor').value;
 }
 
 }
